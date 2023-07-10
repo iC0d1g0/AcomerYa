@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/amrillo_pastel"
+    tools:context=".Almuerzo">
+
+    <ImageView
+        android:id="@+id/almuerzo_desayuno_imagen2"
+        android:layout_width="336dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="40dp"
+
+        android:background="@drawable/rectangle_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/desayunos" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="400dp"
+        android:layout_height="35dp"
+        android:text="Almuerzo"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/almuerzo_navigationView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/almuerzo_desayuno_imagen2"
+        app:layout_constraintVertical_bias="0.359"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/almuerzo_navigationView2"
+        android:layout_width="393dp"
+        android:layout_height="539dp"
+        android:background="@drawable/rectangle_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/almuerzo_textView"
+        tools:ignore="UnknownId">
+
+        <Space
+            android:layout_width="345dp"
+            android:layout_height="24dp" />
+
+        <ScrollView
+            android:layout_width="410dp"
+            android:layout_height="561dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="    Con Grasas"
+                            android:textColor="@color/black"
+                            android:textSize="28dp"
+                            android:textStyle="bold"
+
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:id="@+id/almuerzo_bollos"
+                                android:layout_width="186dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/ovalo_shape"
+
+                                app:srcCompat="@drawable/arroz_leche" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/almuerzo_croquetas"
+                                android:layout_width="165dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/ovalo_shape"
+                                app:srcCompat="@drawable/croquetas"
+
+                                />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/almuerzo_tresgolpe"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/tresgolpe" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/almuerzo_picapollo"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/picapollo" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:text="    Fitness"
+                    android:textColor="@color/black"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+
+
+                    />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/almuerzo_avena"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/avena" />
+
+                            <Space
+                                android:layout_width="41dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/almuerzo_avena_banana"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/avena_banana" />
+
+                            <Space
+                                android:layout_width="43dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/almuerzo_crumble"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/crumble" />
+
+                            <Space
+                                android:layout_width="54dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/almuerzo_jugo_avena"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/jugo_avena" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/almuerzo_yogur"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                tools:srcCompat="@drawable/yogur" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="19dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="    Lijero"
+                    android:textColor="@color/black"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/almuerzo_chocolate"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/chocolate" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/almuerzo_pan_maiz"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/pan_maiz" />
+
+                            <Space
+                                android:layout_width="55dp"
+                                android:layout_height="23dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/almuerzo_yuca_caliente"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/yuca_caliente" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/almuerzo_tortilla_huevo"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/tortilla_huevo" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="    Pesado"
+                    android:textColor="@color/black"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/almuerzo_arepa"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/arepa" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/almuerzo_empanada"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/empanadas" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/almuerzo_mangu"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/mangu" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/almuerzo_pasteles"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/pasteles" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/almuerzo_tarta"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/tarta" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Verdes y para adergazar"
+                    android:textColor="@color/black"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/almuerzo_batidos"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/batidos" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/almuerzo_batidos_uva"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/batidos_uva" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/almuerzo_imageView14"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/aguacate" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/almuerzo_sandwich"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/sandwich" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/almuerzo_sandwich_otro"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/sandwich_otro" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </com.google.android.material.navigation.NavigationView>
+</androidx.constraintlayout.widget.ConstraintLayout>

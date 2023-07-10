@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">AcomerYa</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="prefs_file">com.example.acomerya.PREFERENCE_FILE_KEY</string>
+
+
+    <string name="elaboracion">
+<b>ELABORACIÓN PASO A PASO</b>\n\nGuayar la yuca\nPela y lava la yuca. Guaya/ralla usando el lado más fino del guayo/rallador, o utilizando el rallador del\nprocesador de alimentos (lo que hice). Retira el nervio central de la yuca, y trozos que hayan quedado enteros.\nPon la yuca sobre un paño de algodón\nlimpio y exprime hasta sacarle la mayor cantidad de líquido posible. Captura el líquido en un recipiente y mide (luego puedes descartar el líquido)\nMedir \ncaldo\nMide la misma cantidad de caldo que la que mediste del líquido que sacaste a la yuca (en mi caso había una taza de líquido y agregué una taza de\ncaldo a la yuca).\n\nAblandando las hojas\nHierve una olla llena de agua y sumerge las hojas hasta que estén flexibles (aproximadamente un minuto).\nSácalas del agua y resérvalas.\n\nPreparar los bollos\n\nCombina el caldo, con sal al gusto. Añade la mantequilla y el anís. Combina con la yuca y mezcla\nbien. Agrega el huevo batido. Mezcla bien.\nColoca ¼ de taza de la masa en un pedazo de hoja de plátano, o papel pergamino y envuelve. Debe tener un\ngrosor de menos de ½ pulgada [unos 0.75 cm].\nHacer más bollos con el resto de la masa.\n\n<b>Cocinar</b>\n\nCalienta una sartén engrasada a fuego medio. Coloca de 2 a 3 de los bollos en la sartén, tápala y cocínalos durante 15 minutos. Dale la\nvuelta, tapa y cocina 10 minutos más.\nDesenvuelve uno y comprueba si está cocido, si es necesario, vuelve a envolverlo y cocínalo más.\nRepita la\noperación con el resto de los envoltorios.\n\n
+<b>Servir!!</b>\n\nSirve envueltos para evitar que se resequen, y desenvuélvelos justo antes de comer.\n\n</string>
+    <string name="precentacion"><b>PANECICOS (BOLLOS DE YUCA Y CHICHARRÓN)</b>\n\nEl panecico de yuca es un plato casi desconocido de nuestra cocina, más conocido como comida de carretera. \nuestra receta de este plato con la textura de la yuca y el rico sabor de crujiente chicharrón es una versión qué he modernizado de este plato de Tierra\nAdentro.\n\n
+<b>SOBRE NUESTRA RECETA</b>\n\nOriginalmente oí de este plato de algunos de nuestros lectores, y fue ese espíritu de apertura de los dominicanos que me\nllevó a la receta. Este no es un plato muy conocido o común, solo lo probé una vez de un vendedor en la carretera de Dajabón-Loma de Cabrera, aunque he\noído que hay al menos otros dos vendedores en el país.\n\n
+\nGracias a Da. Nena y a Elba Rosa de Partido, Dajabón, por confirmar algunos detalles de la receta.\nSi buscas una versión un poco más sencilla, prueba\neste pan de yuca basado en el mismo concepto y receta.\n\n<b>¡Buen provecho!</b></string>
+    <string name="boollos_de_yuca">
+<b>INGREDIENTES</b>
+ \n\n 1½ lb yuca, [0.7 kg] pelada y lavada\n1 taza caldo de pollo, casero sin sal\n1 cucharadita sal\n3 cucharadas mantequilla\n1 cucharada anís\n1 huevo, batido\n1 libra chicharrón de cerdo, picadito\n8 hojas de plátano, o papel pergamino, cortados en cuadrados de 13 x 13 cm.\n2 cucharadas aceite, para untar la sartén\n</string>
+</resources>

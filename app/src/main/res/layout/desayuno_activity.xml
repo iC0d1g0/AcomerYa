@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DesayunoActivity"
+    android:background="@color/amrillo_pastel"
+    >
+
+    <ImageView
+        android:id="@+id/desayuno_imagen"
+        android:layout_width="336dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rectangle_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/desayunos" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="400dp"
+        android:layout_height="35dp"
+        android:text="Desayunos Domninicanos"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="28dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/navigationView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desayuno_imagen"
+        app:layout_constraintVertical_bias="0.359"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView2"
+        android:layout_width="393dp"
+        android:layout_height="539dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="UnknownId"
+        android:background="@color/transparente"
+        >
+
+        <Space
+            android:layout_width="345dp"
+            android:layout_height="24dp" />
+
+        <ScrollView
+            android:layout_width="410dp"
+            android:layout_height="561dp"
+            >
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rectangle_purple"
+                >
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="    Con Grasas"
+                            android:textSize="28dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:id="@+id/bollos"
+                                android:layout_width="186dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/circle_shape"
+                                app:srcCompat="@drawable/bollos"/>
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/croquetas"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/croquetas"
+                                android:background="@color/transparente"
+
+                                />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/tresgolpe"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/tresgolpe" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/picapollo"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/picapollo" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:text="    Fitness"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+
+                    />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/avena"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/avena" />
+
+                            <Space
+                                android:layout_width="41dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/avena_banana"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/avena_banana" />
+
+                            <Space
+                                android:layout_width="43dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/crumble"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/crumble" />
+
+                            <Space
+                                android:layout_width="54dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/jugo_avena"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/jugo_avena" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/yogur"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/yogur" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="19dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="    Lijero"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/chocolate"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/chocolate" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/pan_maiz"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/pan_maiz" />
+
+                            <Space
+                                android:layout_width="55dp"
+                                android:layout_height="23dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/yuca_caliente"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/yuca_caliente" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/tortilla_huevo"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/tortilla_huevo" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="    Pesado"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/arepa"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/arepa" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/empanada"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/empanadas" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/mangu"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/mangu"/>
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/pasteles"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/pasteles" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/tarta"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/tarta" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Verdes y para adergazar"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/batidos"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/batidos" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/batidos_uva"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/batidos_uva"/>
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/imageView14"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/aguacate" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/sandwich"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/sandwich" />
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/sandwich_otro"
+                                android:layout_width="186dp"
+                                android:layout_height="180dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/sandwich_otro" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </com.google.android.material.navigation.NavigationView>
+</androidx.constraintlayout.widget.ConstraintLayout>

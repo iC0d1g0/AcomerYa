@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/amrillo_pastel"
+    tools:context=".MainActivity"
+
+    android:screenReaderFocusable="false"
+    >
+
+    <ImageView
+        android:id="@+id/logoapk"
+        android:layout_width="136dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splash_" />
+
+    <TextView
+        android:id="@+id/nombreapk"
+        android:layout_width="401dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:text="AcomerYa!!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="38dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoapk"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="385dp"
+        android:layout_height="535dp"
+
+        android:background="@color/amrillo_pastel"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:foregroundGravity="center_horizontal"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        >
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="383dp"
+            android:layout_height="530dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/amrillo_pastel">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangle_purple">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_desayuno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_purple"
+                        android:text="Desayunos"
+                        android:textColor="@color/black"
+                        android:textSize="28dp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp" />
+
+                    <ImageView
+                        android:id="@+id/boton_almuerzos"
+                        android:layout_width="match_parent"
+                        android:layout_height="269dp"
+                        android:background="@drawable/rectangle_white"
+                        app:srcCompat="@drawable/desayunos" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp" />
+
+
+
+
+
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp" />
+
+                    <TextView
+                        android:id="@+id/text_aperitivos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aperitivos"
+                        android:textColor="@color/black"
+                        android:textSize="28dp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp" />
+
+
+                    <ImageView
+                        android:id="@+id/boton_aperitivos"
+                        android:layout_width="match_parent"
+                        android:layout_height="269dp"
+                        android:background="@drawable/rectangle_white"
+                        app:srcCompat="@drawable/aperitivos"
+                        android:layout_gravity="center"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp" />
+
+                    <TextView
+                        android:id="@+id/textAlmuerzo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Almuerzo"
+                        android:textColor="@color/black"
+                        android:textSize="28dp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp" />
+
+
+                    <ImageView
+                        android:id="@+id/almuerzo"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="272dp"
+                        android:background="@drawable/rectangle_white"
+                        app:srcCompat="@drawable/almuerzos" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp" />
+
+
+
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp" />
+
+
+
+
+
+                </LinearLayout>
+            </ScrollView>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.navigation.NavigationView>
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/rectangle_purple">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/cuenta_flotin"
+                android:layout_width="wrap_content"
+                android:layout_height="122dp"
+                android:clickable="true"
+
+                app:srcCompat="@drawable/baseline_person_outline_24" />
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

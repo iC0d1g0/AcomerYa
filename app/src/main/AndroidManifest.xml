@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/SinBarra"
+        tools:targetApi="31">
+        <activity
+            android:name=".Fritos"
+            android:exported="false" />
+        <activity
+            android:name=".Almuerzo"
+            android:exported="false" />
+        <activity
+            android:name=".Aperitivos_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Postres_activity"
+            android:exported="false" />
+        <activity
+            android:name=".miCuenta_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Splash_activity"
+            android:exported="true"
+            android:theme="@style/SplashThem">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RecetaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DesayunoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_login_"
+            android:exported="false"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

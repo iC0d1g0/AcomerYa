@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "370295400907",
+    "project_id": "acomerya-ec719",
+    "storage_bucket": "acomerya-ec719.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370295400907:android:3d8249fa4903b1c466ee4e",
+        "android_client_info": {
+          "package_name": "com.example.acomerya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370295400907-kk3qfc6ona93jqcgicuin609uvs9776h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqA9C_NfSfbx4huKXPuidAO0hK3OpbFes"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370295400907-kk3qfc6ona93jqcgicuin609uvs9776h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

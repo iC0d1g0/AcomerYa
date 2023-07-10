@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/amrillo_pastel"
+    tools:context=".RecetaActivity">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/presentacion"
+        android:layout_width="323dp"
+        android:layout_height="199dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rectangle_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bollos" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bollos de Yuca"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:id="@+id/titulo_receta"
+        app:layout_constraintBottom_toTopOf="@+id/navigationView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/presentacion" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView3"
+        android:layout_width="386dp"
+        android:layout_height="447dp"
+        android:layout_below="@+id/presentacion"
+        android:background="@drawable/rectangle_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:gravity="center"
+            android:text="RECETA: "
+            android:textColor="@color/black"
+            android:textSize="28dp"
+            android:textStyle="bold"
+
+            />
+
+        <ScrollView
+            android:layout_width="340dp"
+            android:layout_height="379dp"
+            android:layout_gravity="center|center"
+            android:background="@drawable/rectangle_white">
+
+            <LinearLayout
+                android:layout_width="359dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pasos"
+                    android:layout_width="349dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+
+                    android:text="@string/precentacion"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/pasos2"
+                    android:layout_width="349dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+
+                    android:text="@string/boollos_de_yuca"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/preparacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:text="@string/elaboracion"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+
+                    />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
